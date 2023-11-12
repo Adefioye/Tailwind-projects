@@ -24,16 +24,18 @@ const PricingCards = () => {
     },
   ];
   return (
-    <div className="flex flex-col min-h-screen gap-6 p-10 justify-center items-center md:flex-row bg-slate-800">
-      {pricings.map((pricing) => (
-        <PricingCard
-          key={pricing.tier}
-          tier={pricing.tier}
-          quantity={pricing.quantity}
-          monthlyPrice={pricing.monthlyPrice}
-          borderActive={pricing.borderActive}
-        />
-      ))}
+    <div className="flex justify-center items-center bg-slate-800">
+      <div className="flex flex-col my-10 space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+        {pricings.map((pricing) => (
+          <PricingCard
+            key={pricing.tier}
+            tier={pricing.tier}
+            quantity={pricing.quantity}
+            monthlyPrice={pricing.monthlyPrice}
+            borderActive={pricing.borderActive}
+          />
+        ))}
+      </div>
     </div>
   );
 };
