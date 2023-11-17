@@ -6,6 +6,7 @@ export default function Home() {
   const projectLinks = [
     { name: "Email Subscribe", href: "/email-subscribe" },
     { name: "Pricing cards", href: "/pricing-cards" },
+    { name: "Product Modal", href: "/pricing-modal" },
   ];
 
   return (
