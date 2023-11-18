@@ -7,6 +7,7 @@ export default function Home() {
     { name: "Email Subscribe", href: "/email-subscribe" },
     { name: "Pricing cards", href: "/pricing-cards" },
     { name: "Product Modal", href: "/pricing-modal" },
+    { name: "Image Gallery", href: "/image-gallery" },
   ];
 
   return (
